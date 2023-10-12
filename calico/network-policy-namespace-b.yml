@@ -9,7 +9,7 @@ spec:
       name: nginx
   policyTypes:
     - Ingress
-    - Engress
+    - Egress
   ingress:
     - from: 
       - namespaceSelector:
