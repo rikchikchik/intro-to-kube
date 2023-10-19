@@ -16,7 +16,7 @@ spec:
       taskRef: 
         name: push
       params:
-        - name: IMAGE_NAME
+        - name: IMAGE
           value: nginx:latest
         - name: DOCKERFILE_PATH
           value: /workspace/source
@@ -36,7 +36,7 @@ spec:
       params:
         - name: NAMESPACE
           value: default
-        - name: IMAGE_NAME
+        - name: IMAGE
           value: nginx:latest
         - name: REPO_URL
           value: https://github.com/rikchikchik/intro-to-kube
