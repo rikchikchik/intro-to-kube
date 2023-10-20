@@ -39,4 +39,4 @@ spec:
         - name: IMAGE
           value: nginx:latest
         - name: REPO_URL
-          value: https://github.com/rikchikchik/intro-to-kube
+          value: https://github.com/rikchikchik/intro-to-kube.git
