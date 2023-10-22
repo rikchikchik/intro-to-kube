@@ -13,15 +13,11 @@ spec:
         git clone $(params.REPO_URL) --depth 1 /workspace/source
     - name: npm-install
       image: node
-      command:
-        - /bin/sh
-        - -c
-      args: 
-        - npm install
+      command: ["npm"]
+      args: ["install"]
+      workspace: /workspace/source
     - name: npm-test
       image: node
-      command:
-        - /bin/sh
-        - -c
-      args: 
-        - npm test
+      command: ["npm"]
+      args: ["test"]
+      workspace: /workspace/source
