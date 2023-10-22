@@ -15,9 +15,9 @@ spec:
       image: node
       command: ["npm"]
       args: ["install"]
-      workspace: /workspace/source
+      workingDir: /workspace/source
     - name: npm-test
       image: node
       command: ["npm"]
       args: ["test"]
-      workspace: /workspace/source
+      workingDir: /workspace/source
